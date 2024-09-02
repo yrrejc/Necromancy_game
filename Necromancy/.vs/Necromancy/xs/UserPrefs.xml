@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{913B9BD5-AF98-667C-D439-F4598383F7F0}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/basicEnemyScript.cs">
+    <Files>
+      <File FileName="Assets/basicMinionScript.cs" Line="49" Column="8" />
+      <File FileName="Assets/dontDestroyOnLoad.cs" Line="16" Column="27" />
+      <File FileName="Assets/basicEnemyScript.cs" Line="84" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Necromancy" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="basicEnemyScript.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7267647f-f9f5-4d2f-9ab3-cb97ce80e050" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
