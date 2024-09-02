@@ -335,6 +335,10 @@ public class basicMinionScript : MonoBehaviour
             target = other.gameObject;
 
         }
+        else if (other.gameObject.CompareTag("player"))
+        {
+            target = other.gameObject;
+        }
     }
   
 }
