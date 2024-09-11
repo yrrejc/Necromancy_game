@@ -50,9 +50,12 @@ public class basicEnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(transform.forward * 5, ForceMode.Force);
+        
         playerBodyRef = GameObject.FindAnyObjectByType<playerMovement>();
-
+        if (target == null)
+        {
+            target = playerBodyRef.gameObject;
+        }
         if (grounded != true)
         {
             notGroundedTimer += Time.deltaTime;
@@ -73,7 +76,7 @@ public class basicEnemyScript : MonoBehaviour
         {
             followTarget();
         }
-        chooseTarget();
+        //chooseTarget();
         detectTarget();
     }
 
@@ -100,13 +103,17 @@ public class basicEnemyScript : MonoBehaviour
                 float distance = Vector3.Distance(transform.position, minionList[i].transform.position);
                 if (distance < 4 || distanceToPlayer < 4)
                 {
+                    target = minionList[i].gameObject;
+                    targetDistance = distance;
                     rb.AddForce(-transform.forward * speed, ForceMode.Force);
+                    
                 }
                 else if (distance > 5 || distanceToPlayer > 5)
                 {
                     target = minionList[i].gameObject;
                     targetDistance = distance;
-                    rb.AddForce(transform.forward * speed, ForceMode.Force);
+                    rb.AddForce(-transform.forward * speed, ForceMode.Force);
+                   
                 }
                 else
                 {
@@ -132,20 +139,23 @@ public class basicEnemyScript : MonoBehaviour
     void followTarget()
     {
 
-        currentSpeed = rb.velocity.magnitude;
-        //ector3 clampSpeed = rb.velocity.normalized * maxSpeed;
-        if (currentSpeed > maxSpeed) 
+        Vector3 directionToTarget = (target.transform.position - transform.position).normalized;
+        targetRotation = directionToTarget.normalized;
+        transform.rotation = Quaternion.LookRotation(targetRotation);
+        float distanceToTarget = Vector3.Distance(transform.position, target.transform.position);
+        if(distanceToTarget > 4)
         {
-            //rb.velocity = clampSpeed;
+            rb.AddForce(transform.forward * speed, ForceMode.Force);
         }
-        if(target != null)
+        if(distanceToTarget < 3){
+            rb.AddForce(-transform.forward * speed, ForceMode.Force);
+
+        }
+        Vector3 clampSpeed = rb.velocity.normalized * maxSpeed;
+        if (currentSpeed >= maxSpeed)
         {
-            transform.LookAt(target.transform);
-            //Vector3 direction = (target.transform.position - transform.position).normalized;
-            //Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-            //transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 10);
+            rb.velocity = clampSpeed;
         }
-        
 
     }
     void groundCheck()
@@ -202,6 +212,18 @@ public class basicEnemyScript : MonoBehaviour
     public void unRam()
     {
         rammed = false;
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("player"))
+        {
+            target = other.gameObject;
+        }
+        if (other.gameObject.CompareTag("minion"))
+        {
+            target = other.gameObject;
+        }
+      
     }
 }
 
