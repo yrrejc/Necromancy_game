@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
@@ -20,6 +21,7 @@ public class basicEnemyScript : MonoBehaviour
     [Header("Debuging")]
     public bool targetPlayer;
     public bool targetMinion;
+    public bool walking;
     [Header("Stat")]
     public bool longRange;
     public float targetDistance;
@@ -138,24 +140,35 @@ public class basicEnemyScript : MonoBehaviour
     //more like look at target
     void followTarget()
     {
-
+        Vector3 clampSpeed = rb.velocity.normalized * maxSpeed;
         Vector3 directionToTarget = (target.transform.position - transform.position).normalized;
         targetRotation = directionToTarget.normalized;
         transform.rotation = Quaternion.LookRotation(targetRotation);
         float distanceToTarget = Vector3.Distance(transform.position, target.transform.position);
         if(distanceToTarget > 4)
         {
+            walking = true;
             rb.AddForce(transform.forward * speed, ForceMode.Force);
         }
-        if(distanceToTarget < 3){
+        
+        else if (distanceToTarget < 3)
+        {
+            walking = true;
             rb.AddForce(-transform.forward * speed, ForceMode.Force);
 
         }
-        Vector3 clampSpeed = rb.velocity.normalized * maxSpeed;
-        if (currentSpeed >= maxSpeed)
+
+        else if (currentSpeed >= maxSpeed)
         {
+           walking = true;
             rb.velocity = clampSpeed;
         }
+        else
+        {
+           walking = false;    
+        }
+        
+       
 
     }
     void groundCheck()
