@@ -26,7 +26,7 @@ public class flyingObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveForward();
+        
         Vector3 velocity = rb.velocity;
         forwardSpeed = velocity.x;
         flyingSpeed = velocity.y;
@@ -52,7 +52,9 @@ public class flyingObject : MonoBehaviour
         {
             fly();
         }
+        
 
+     
     }
 
     void castRay()
@@ -84,10 +86,5 @@ public class flyingObject : MonoBehaviour
         int randomStrength = Random.Range(flyingStrength - 1, flyingStrength + 1);
         rb.AddForce(transform.up * flyingStrength, ForceMode.Force);
     }
-    void moveForward()
-    {
-        
-        rb.AddForce(transform.forward * 5, ForceMode.Force);
-        
-    }
+    
 }

@@ -1,21 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\80307\\Necromancy_game\\Necromancy\\",
+  "WorkspaceRootPath": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|d:\\80307\\necromancy_game\\necromancy\\assets\\basicenemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\assets\\rockguyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|solutionrelative:assets\\rockguyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|c:\\users\\yrrej\\documents\\github\\necromancy_game\\necromancy\\assets\\basicenemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|solutionrelative:assets\\basicenemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|d:\\80307\\necromancy_game\\necromancy\\assets\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|c:\\users\\yrrej\\documents\\github\\necromancy_game\\necromancy\\assets\\flyingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|solutionrelative:assets\\flyingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\assets\\topdowncamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|solutionrelative:assets\\topdowncamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\assets\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|solutionrelative:assets\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|d:\\80307\\necromancy_game\\necromancy\\assets\\basicminionscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\assets\\cammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|solutionrelative:assets\\cammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\assets\\basicminionscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|solutionrelative:assets\\basicminionscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|D:\\80307\\Necromancy_game\\Necromancy\\assets\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\assets\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{913B9BD5-AF98-667C-D439-F4598383F7F0}|Assembly-CSharp.csproj|solutionrelative:assets\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,15 +42,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "flyingObject.cs",
+              "DocumentMoniker": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\flyingObject.cs",
+              "RelativeDocumentMoniker": "Assets\\flyingObject.cs",
+              "ToolTip": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\flyingObject.cs",
+              "RelativeToolTip": "Assets\\flyingObject.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswDgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T08:49:00.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "topDownCamera.cs",
+              "DocumentMoniker": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\topDownCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\topDownCamera.cs",
+              "ToolTip": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\topDownCamera.cs",
+              "RelativeToolTip": "Assets\\topDownCamera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T03:04:13.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "camManager.cs",
+              "DocumentMoniker": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\camManager.cs",
+              "RelativeDocumentMoniker": "Assets\\camManager.cs",
+              "ToolTip": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\camManager.cs",
+              "RelativeToolTip": "Assets\\camManager.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAqwE0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T03:03:39.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "rockGuyScript.cs",
+              "DocumentMoniker": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\rockGuyScript.cs",
+              "RelativeDocumentMoniker": "Assets\\rockGuyScript.cs",
+              "ToolTip": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\rockGuyScript.cs",
+              "RelativeToolTip": "Assets\\rockGuyScript.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T02:33:13.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "enemySpawn.cs",
-              "DocumentMoniker": "D:\\80307\\Necromancy_game\\Necromancy\\Assets\\enemySpawn.cs",
+              "DocumentMoniker": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\enemySpawn.cs",
               "RelativeDocumentMoniker": "Assets\\enemySpawn.cs",
-              "ToolTip": "D:\\80307\\Necromancy_game\\Necromancy\\Assets\\enemySpawn.cs",
+              "ToolTip": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\enemySpawn.cs",
               "RelativeToolTip": "Assets\\enemySpawn.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAwwEoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -43,41 +110,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "basicEnemyScript.cs",
-              "DocumentMoniker": "D:\\80307\\Necromancy_game\\Necromancy\\Assets\\basicEnemyScript.cs",
+              "DocumentMoniker": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\basicEnemyScript.cs",
               "RelativeDocumentMoniker": "Assets\\basicEnemyScript.cs",
-              "ToolTip": "D:\\80307\\Necromancy_game\\Necromancy\\Assets\\basicEnemyScript.cs",
+              "ToolTip": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\basicEnemyScript.cs",
               "RelativeToolTip": "Assets\\basicEnemyScript.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAIwI8AAABFAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAiwDYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T01:00:08.508Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "basicMinionScript.cs",
-              "DocumentMoniker": "D:\\80307\\Necromancy_game\\Necromancy\\Assets\\basicMinionScript.cs",
+              "DocumentMoniker": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\basicMinionScript.cs",
               "RelativeDocumentMoniker": "Assets\\basicMinionScript.cs",
-              "ToolTip": "D:\\80307\\Necromancy_game\\Necromancy\\Assets\\basicMinionScript.cs",
+              "ToolTip": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\basicMinionScript.cs",
               "RelativeToolTip": "Assets\\basicMinionScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T03:02:15.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T03:02:15.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "playerMovement.cs",
-              "DocumentMoniker": "D:\\80307\\Necromancy_game\\Necromancy\\Assets\\playerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\playerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\playerMovement.cs",
-              "ToolTip": "D:\\80307\\Necromancy_game\\Necromancy\\Assets\\playerMovement.cs",
+              "ToolTip": "C:\\Users\\yrrej\\Documents\\GitHub\\Necromancy_game\\Necromancy\\Assets\\playerMovement.cs",
               "RelativeToolTip": "Assets\\playerMovement.cs",
               "ViewState": "AQIAAMoAAAAAAAAAAAAYwDkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

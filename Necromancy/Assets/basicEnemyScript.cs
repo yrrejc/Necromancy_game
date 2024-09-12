@@ -52,7 +52,7 @@ public class basicEnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        currentSpeed = rb.velocity.magnitude;
         playerBodyRef = GameObject.FindAnyObjectByType<playerMovement>();
         if (target == null)
         {
@@ -142,7 +142,9 @@ public class basicEnemyScript : MonoBehaviour
     {
         Vector3 clampSpeed = rb.velocity.normalized * maxSpeed;
         Vector3 directionToTarget = (target.transform.position - transform.position).normalized;
+        directionToTarget.y = 0;
         targetRotation = directionToTarget.normalized;
+
         transform.rotation = Quaternion.LookRotation(targetRotation);
         float distanceToTarget = Vector3.Distance(transform.position, target.transform.position);
         if(distanceToTarget > 4)
