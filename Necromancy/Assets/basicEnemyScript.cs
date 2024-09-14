@@ -153,7 +153,7 @@ public class basicEnemyScript : MonoBehaviour
             rb.AddForce(transform.forward * speed, ForceMode.Force);
         }
         
-        else if (distanceToTarget < 3)
+        else if (distanceToTarget < 1)
         {
             walking = true;
             rb.AddForce(-transform.forward * speed, ForceMode.Force);

@@ -32,6 +32,8 @@ public class attackHitboxScript : MonoBehaviour
         {
             canDamage=false;
             playerMovementRef.playerTakeDamage(rockguyRef.damage);
+            Rigidbody playerRb= other.gameObject.GetComponent<Rigidbody>();
+            playerRb.AddForce(transform.up * 10, ForceMode.Impulse);
            
         }
         if (other.gameObject.CompareTag("minion")&&canDamage ==true)
