@@ -10,6 +10,7 @@ public class basicLongRangeEnemy : MonoBehaviour
     public GameObject Bullet;
     public int fireTime;
     public float fireTimeCountDown;
+    public gameManagerScript gameManagerRef;
     [Header("settings")]
     public float fireDistance;
     [Header("Requirements")]
@@ -19,6 +20,7 @@ public class basicLongRangeEnemy : MonoBehaviour
     void Start()
     {
         basicEnemyScriptRef = GetComponent<basicEnemyScript>();
+        gameManagerRef = GameObject.FindObjectOfType<gameManagerScript>();
     }
 
     // Update is called once per frame
@@ -46,8 +48,9 @@ public class basicLongRangeEnemy : MonoBehaviour
     }
     void fire()
     {
-        if(!firing && canFire)
+        if(!firing && canFire && gameManagerRef.attackToken <= gameManagerRef.maxAttackToken)
         {
+            gameManagerRef.attackToken += 1;
             GameObject currentBullet = Instantiate(Bullet, transform.position, transform.rotation);
             Rigidbody bulletRb = currentBullet.GetComponent<Rigidbody>();
             bulletRb.AddForce(currentBullet.transform.forward * 90, ForceMode.Force);

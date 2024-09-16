@@ -14,10 +14,14 @@ public class rockGuyScript : MonoBehaviour
     public float maxAttackCooldown;
     public Transform attackPoint;
     public bool canAttack;
-    
+    public bool inRange;
+    public LayerMask playerLayer;
+
     // Start is called before the first frame update
     void Start()
     {
+        playerLayer = 1 << LayerMask.NameToLayer("player");
+
         maxAttackCooldown = 5;
         attackCooldown = maxAttackCooldown;
         canAttack = true;
@@ -46,8 +50,12 @@ public class rockGuyScript : MonoBehaviour
             canAttack = true;
             attackCooldown = maxAttackCooldown;
         }
-       
-        attackRange();
+
+        if ((canAttack == true))
+        {
+            attackRange();
+        }
+
     }
 
 
@@ -56,12 +64,12 @@ public class rockGuyScript : MonoBehaviour
         Ray ray = new Ray(attackPoint.transform.position, attackPoint.transform.forward* attackDistance);
         Debug.DrawRay(ray.origin, ray.direction * attackDistance, Color.yellow);
         RaycastHit hit;
-        LayerMask playerLayer = 1 << LayerMask.NameToLayer("player");
 
         if (Physics.Raycast(ray, out hit, attackDistance, playerLayer))
         {
             if(hit.collider.CompareTag("player") || hit.collider.CompareTag("minion"))
             {
+                inRange = true;
                 if(canAttack==true)
                 {
                     canAttack = false;
@@ -69,6 +77,10 @@ public class rockGuyScript : MonoBehaviour
                     animator.SetTrigger("Attack");
                     
                 }
+            }
+            else
+            {
+                inRange=false;
             }
         }
 

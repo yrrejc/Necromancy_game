@@ -13,10 +13,13 @@ public class gameManagerScript : MonoBehaviour
     public int minionMaxHealth;
     public basicMinionScript[] minionList;
     public upgradeStatScript upgradeStatScriptRef;
+    public int attackToken;
+    public int maxAttackToken;
     // Start is called before the first frame update
     void Start()
     {
         minionMaxDmg = 4;
+        attackToken = maxAttackToken;
         minionMaxHealth = 10;
 
     }
@@ -36,11 +39,26 @@ public class gameManagerScript : MonoBehaviour
         {
             minionList[i].maxHealth = minionMaxHealth;
         }
+        reduceToken();
     }
 
 
     void spawnEnemy()
     {
         
+    }
+
+    void reduceToken()
+    {
+        for (int i = attackToken; i > 0; i++)
+        {
+            StartCoroutine("reducingToken");
+        }
+    }
+
+    IEnumerator reducingTokens()
+    {
+        attackToken -= 1;
+        yield return new WaitForSeconds(1);
     }
 }

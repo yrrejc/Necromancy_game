@@ -160,7 +160,7 @@ public class basicEnemyScript : MonoBehaviour
 
         }
 
-        else if (currentSpeed >= maxSpeed)
+        if (currentSpeed >= maxSpeed)
         {
            walking = true;
             rb.velocity = clampSpeed;
