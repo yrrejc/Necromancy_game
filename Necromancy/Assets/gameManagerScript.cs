@@ -39,7 +39,8 @@ public class gameManagerScript : MonoBehaviour
         {
             minionList[i].maxHealth = minionMaxHealth;
         }
-        reduceToken();
+        StartCoroutine("reducingToken");
+
     }
 
 
@@ -52,7 +53,6 @@ public class gameManagerScript : MonoBehaviour
     {
         for (int i = attackToken; i > 0; i++)
         {
-            StartCoroutine("reducingToken");
         }
     }
 
